@@ -2,19 +2,24 @@
 
 #include "gridtoolbar.h"
 #include "viewingtoolsbar.h"
+#include "favoritetoolbar.h"
 
 TabbedToolBar::TabbedToolBar(QWidget* parent)
 {
     this->setParent(parent);
     this->setContentsMargins(0,0,0,0);
-
-//    CreateFavTools();
+    this->setDocumentMode(true);
+    CreateFavTools();
     CreateViewingTools();
 //    CreateWLWWTools();
 //    CreateMeasurementTools();
 
 }
 
+void TabbedToolBar::CreateFavTools(){
+    auto toolbar = new FavoriteToolsBar(this->parentWidget());
+    this->addTab(toolbar,"My Favorite");
+}
 void TabbedToolBar::CreateViewingTools(){
     auto toolbar = new ViewingToolsBar(this->parentWidget());
     this->addTab(toolbar,"Viewing Tools");

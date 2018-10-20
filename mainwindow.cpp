@@ -26,9 +26,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     this->setWindowTitle("InstaWorkstation"); // application title.
 
-#ifdef WIDGETS_DEBUG_COLOR
     this->setStyleSheet("background-color: black;"); // application background color.
-#endif
     this->setContentsMargins(1,1,1,1);
 
     d->m_mainWidget = new QWidget(this); // create main widget.

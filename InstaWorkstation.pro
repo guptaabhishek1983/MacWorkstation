@@ -29,17 +29,22 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    CustomControls/toolpushbutton.cpp \
+    ToolBar/toolpushbutton.cpp \
     ToolBar/tabbedtoolbar.cpp \
     ToolBar/gridtoolbar.cpp \
-    ToolBar/viewingtoolsbar.cpp
+    ToolBar/viewingtoolsbar.cpp \
+    ToolBar/favoritetoolbar.cpp \
+    ToolBar/toolbuttonscollection.cpp
 
 HEADERS += \
         mainwindow.h \
-    CustomControls/toolpushbutton.h \
+    ToolBar/toolpushbutton.h \
     ToolBar/tabbedtoolbar.h \
     ToolBar/gridtoolbar.h \
-    ToolBar/viewingtoolsbar.h
+    ToolBar/viewingtoolsbar.h \
+    ToolBar/favoritetoolbar.h \
+    ToolBar/toolbuttonscollection.h \
+    ToolBar/toolactions.h
 
 #FORMS += \
 #        mainwindow.ui
