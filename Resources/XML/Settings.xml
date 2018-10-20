@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<ViewerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetworkSettings>
+    <HTTPEnable>false</HTTPEnable>
+    <TalkSSLWithRSS>true</TalkSSLWithRSS>
+    <Proxy Enable="false" AuthEnable="false" HTTPVersion="1.0" server="" port="" user="" password="" />
+  </NetworkSettings>
+  <GeneralSettings>
+    <Threads ComputeNWData="1" ComputeSleep="50" SleepIfDataIsCompressed="50" Network="4" NwThrottleCount="300" ServerThreadPortNo="9418" />
+    <LocalCache Enable="false" Location="c:\temp\meddiff\WS\cache" Size="5120" Sleep="1000" />
+    <ShutDownTime>13000</ShutDownTime>
+    <DownloadOption>LosslessJPEG</DownloadOption>
+    <KeepDicomFiles>false</KeepDicomFiles>
+    <ImageToCacheCount>1</ImageToCacheCount>
+    <ImageToThumbCount>1</ImageToThumbCount>
+    <OfflineViewEnable>false</OfflineViewEnable>
+    <BumpUpSeriesBuffCount>10</BumpUpSeriesBuffCount>
+  </GeneralSettings>
+  <DicomPushSettings Hostname="127.0.0.1" AETitle="RadServer" CallingAETitle="RadPush" TCPPort="5001" Enabled="false" />
+  <SeriesSyncSettings LinearTolerance="2" AngularTolerance="5" />
+  <LogSetting Backend="7" UI="7" />
+  <RImageSettings Enable="true" RootFolder="c:\Rimage" />
+  <DisplaySetting>
+    <MultiMonitor>
+      <PrimaryMonitor>false</PrimaryMonitor>
+      <Extended Id="1" />
+    </MultiMonitor>
+    <!-- Not in use -->
+    <EnableMultiStudy>false</EnableMultiStudy>
+    <!-- Not in use -->
+    <InterpolationType>none</InterpolationType>
+    <ThumbnailSetting MultiImage="false" />
+    <ToolBarSettings OnTop="true">
+      <Favourites ButtonName="SeriesTiles" />
+      <Favourites ButtonName="WW" />
+      <Favourites ButtonName="Stack" />
+      <Favourites ButtonName="Zoom" />
+    </ToolBarSettings>
+  </DisplaySetting>
+  <WindowPreset>
+    <Modality Type="CT">
+      <Parts BodyPart="ABDOMEN" WW="400" WL="60" Key="F1" />
+      <Parts BodyPart="BONE" WW="2500" WL="500" Key="F2" />
+      <Parts BodyPart="ANGIO" WW="600" WL="300" Key="F3" />
+      <Parts BodyPart="BRAIN" WW="80" WL="40" Key="F4" />
+      <Parts BodyPart="CHEST" WW="400" WL="40" Key="F5" />
+      <Parts BodyPart="CEREBRUM" WW="120" WL="40" Key="F6" />
+      <Parts BodyPart="LIVER" WW="150" WL="50" Key="F7" />
+      <Parts BodyPart="LUNG" WW="1500" WL="-500" Key="F8" />
+      <Parts BodyPart="MEDIASTINUM" WW="300" WL="50" Key="F9" />
+      <Parts BodyPart="PELVIS" WW="400" WL="40" Key="F10" />
+      <Parts BodyPart="POSTERIOR_FOSSA" WW="250" WL="80" Key="F11" />
+      <Parts BodyPart="SUBDURAL" WW="130" WL="70" Key="F12" />
+    </Modality>
+  </WindowPreset>
+</ViewerSettings>

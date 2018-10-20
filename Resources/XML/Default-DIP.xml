@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<DIP xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RuleSet Name="CC/MLO" Modality="MG" BodyPart="BREAST">
+    <Screen ScreenIndex="1">
+      <Layout Type="Panel_02">
+        <Tile RowID="0" ColumnID="0" RowSpan="12" ColumnSpan="6">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="R-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="6" RowSpan="12" ColumnSpan="6">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="L-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+      </Layout>
+    </Screen>
+  </RuleSet>
+  <RuleSet Name="CC-MLO-1" Modality="MG" BodyPart="BREAST">
+    <Screen ScreenIndex="1">
+      <Layout Type="Panel_08">
+        <Tile RowID="0" ColumnID="0" RowSpan="6" ColumnSpan="6">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="R-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="6" RowSpan="6" ColumnSpan="6">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="L-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="6" ColumnID="0" RowSpan="6" ColumnSpan="6">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="R-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="6" ColumnID="6" RowSpan="6" ColumnSpan="6">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="L-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+      </Layout>
+    </Screen>
+  </RuleSet>
+  <RuleSet Name="CC-MLO-2" Modality="MG" BodyPart="BREAST">
+    <Screen ScreenIndex="1">
+      <Layout Type="Panel_33">
+        <Tile RowID="0" ColumnID="0" RowSpan="12" ColumnSpan="3">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="R-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="3" RowSpan="12" ColumnSpan="3">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="L-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="6" RowSpan="12" ColumnSpan="3">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="R-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="9" RowSpan="12" ColumnSpan="3">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="L-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+      </Layout>
+    </Screen>
+  </RuleSet>
+   <RuleSet Name="CC/MLO" Modality="CR" BodyPart="BREAST">
+    <Screen ScreenIndex="1">
+      <Layout Type="Panel_02">
+        <Tile RowID="0" ColumnID="0" RowSpan="12" ColumnSpan="6">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="R-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="6" RowSpan="12" ColumnSpan="6">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="L-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+      </Layout>
+    </Screen>
+  </RuleSet>
+  <RuleSet Name="CC-MLO-1" Modality="CR" BodyPart="BREAST">
+    <Screen ScreenIndex="1">
+      <Layout Type="Panel_08">
+        <Tile RowID="0" ColumnID="0" RowSpan="6" ColumnSpan="6">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="R-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="6" RowSpan="6" ColumnSpan="6">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="L-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="6" ColumnID="0" RowSpan="6" ColumnSpan="6">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="R-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="6" ColumnID="6" RowSpan="6" ColumnSpan="6">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="L-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+      </Layout>
+    </Screen>
+  </RuleSet>
+  <RuleSet Name="CC-MLO-2" Modality="CR" BodyPart="BREAST">
+    <Screen ScreenIndex="1">
+      <Layout Type="Panel_33">
+        <Tile RowID="0" ColumnID="0" RowSpan="12" ColumnSpan="3">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="R-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="3" RowSpan="12" ColumnSpan="3">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="L-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="6" RowSpan="12" ColumnSpan="3">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="R-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="9" RowSpan="12" ColumnSpan="3">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="L-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+      </Layout>
+    </Screen>
+  </RuleSet>
+  
+  <RuleSet Name="CC/MLO" Modality="DX" BodyPart="BREAST">
+    <Screen ScreenIndex="1">
+      <Layout Type="Panel_02">
+        <Tile RowID="0" ColumnID="0" RowSpan="12" ColumnSpan="6">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="R-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="6" RowSpan="12" ColumnSpan="6">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="L-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+      </Layout>
+    </Screen>
+  </RuleSet>
+  <RuleSet Name="CC-MLO-1" Modality="DX" BodyPart="BREAST">
+    <Screen ScreenIndex="1">
+      <Layout Type="Panel_08">
+        <Tile RowID="0" ColumnID="0" RowSpan="6" ColumnSpan="6">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="R-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="6" RowSpan="6" ColumnSpan="6">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="L-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="6" ColumnID="0" RowSpan="6" ColumnSpan="6">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="R-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="6" ColumnID="6" RowSpan="6" ColumnSpan="6">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="L-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+      </Layout>
+    </Screen>
+  </RuleSet>
+  <RuleSet Name="CC-MLO-2" Modality="DX" BodyPart="BREAST">
+    <Screen ScreenIndex="1">
+      <Layout Type="Panel_33">
+        <Tile RowID="0" ColumnID="0" RowSpan="12" ColumnSpan="3">
+           <Compare>
+            <Condition Tag="SeriesDescription" Value="R-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="3" RowSpan="12" ColumnSpan="3">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="L-CC" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="6" RowSpan="12" ColumnSpan="3">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="R-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+        <Tile RowID="0" ColumnID="9" RowSpan="12" ColumnSpan="3">
+          <Compare>
+            <Condition Tag="SeriesDescription" Value="L-MLO" Comparator="exactmatch" />
+          </Compare>
+          <State ImageNo="0" Zoom="0" PanX="0" PanY="0" CineFrameRate="15" ImageAlignment="CENTER" ImagePanelName="COUNT_1" />
+        </Tile>
+      </Layout>
+    </Screen>
+  </RuleSet>
+  
+</DIP>
