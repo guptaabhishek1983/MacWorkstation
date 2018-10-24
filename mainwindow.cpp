@@ -45,9 +45,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     d->m_tabbedToolbar = new TabbedToolBar(d->m_mainWidget);
     d->m_main2x2Grid->addWidget(d->m_tabbedToolbar,0,0,Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop);
-//    d->m_main2x2Grid->addWidget(new TabbedToolBar(d->m_mainWidget),0,1,Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop);
-//    d->m_main2x2Grid->addWidget(new TabbedToolBar(d->m_mainWidget),1,0,Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop);
-//    d->m_main2x2Grid->addWidget(new TabbedToolBar(d->m_mainWidget),1,1,Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop);
+
 }
 
 MainWindow::~MainWindow()

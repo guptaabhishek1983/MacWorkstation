@@ -21,11 +21,6 @@ ToolButtonsCollection::ToolButtonsCollection()
         if(a.action== SelectedAction::None) continue;
 
         qDebug().nospace() << "Creating ToolPushButton for Action:"<<a.action<<"";
-//        QPixmap pxm(a.iconURI);
-//        qDebug()<<"Pixmap size:"<<pxm.size().width()<<"x"<<pxm.size().width();
-//        QPixmap scaledPxm = pxm.scaled(100,100, Qt::KeepAspectRatio);
-//        qDebug()<<"Scaled Pixmap size:"<<scaledPxm.size().width()<<"x"<<scaledPxm.size().width();
-
         QIcon* ico = new QIcon(a.iconURI);
         QIcon* selected_ico = new QIcon(a.selectedIconURI);
         ToolPushButton* btn = new ToolPushButton(a.action, ico, selected_ico, a.desc);

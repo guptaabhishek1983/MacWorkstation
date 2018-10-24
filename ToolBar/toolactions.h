@@ -19,16 +19,21 @@ enum SelectedAction{
     RotateLeft,
     FlipVertical,
     FlipHorizontal,
+    Magnifier,
+    InvertColor,
+    OverlayInformation,
 
     // Measurement
+    Arrow,
     Angle,
     Distance,
     PixelIntesity,
     Text,
     CobbAngle,
+    Rectangle,
     Ellipse,
     Circle,
-    Polygon,
+    FreeHand,
     CardioThoraciRatio,
     Eraser,
 
@@ -85,6 +90,18 @@ static struct ToolActions{
 {FlipHorizontal,"Flip horizontally along X-Axis",
     ":/toolbar/Resources/Images/2DToolBar/32X32/blue/fliphor.png",
     ":/toolbar/Resources/Images/2DToolBar/32X32/orange/fliphor.png"},
+{Magnifier, "Magnifier",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/blue/magnify.png",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/orange/magnify.png"},
+{InvertColor, "Invert color",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/blue/invert.png",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/orange/invert.png"},
+{OverlayInformation,"Hide/Display Image Overlay Information",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/blue/imageoverlay.png",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/orange/imageoverlay.png"},
+{Arrow,"Pointer",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/blue/arrow.png",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/orange/arrow.png"},
 {Angle,"Measure Angle",
     ":/toolbar/Resources/Images/2DToolBar/32X32/blue/angle.png",
     ":/toolbar/Resources/Images/2DToolBar/32X32/orange/angle.png"},
@@ -106,7 +123,19 @@ static struct ToolActions{
 {Circle, "Measure Circle area",
     ":/toolbar/Resources/Images/2DToolBar/32X32/blue/circle.png",
     ":/toolbar/Resources/Images/2DToolBar/32X32/orange/circle.png"},
+{Rectangle, "Measure Rectangle area",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/blue/rectangle.png",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/orange/rectangle.png"},
 
+{FreeHand, "Measure Ploygon",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/blue/freehand.png",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/orange/freehand.png"},
+{CardioThoraciRatio,"",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/blue/ctr.jpg",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/blue/ctr.png"},
+{Eraser,"",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/blue/erase.png",
+    ":/toolbar/Resources/Images/2DToolBar/32X32/orange/erase.png"}
 };
 
 static int n_tool_actions_table = sizeof(tool_actions_table) / sizeof(tool_actions_table[0]);
@@ -119,4 +148,5 @@ static inline ToolActions GetToolsActionData(SelectedAction action){
     }
     return GetToolsActionData(SelectedAction::None);
 }
+
 #endif // TOOLACTIONS_H

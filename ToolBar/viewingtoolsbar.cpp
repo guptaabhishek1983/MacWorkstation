@@ -69,4 +69,17 @@ void ViewingToolsBar::CreateTools(){
         ToolPushButton* btn = btnColl->GetToolButton(SelectedAction::FlipVertical);
         layout->addWidget(btn);
     }
+
+    {
+        ToolPushButton* btn = btnColl->GetToolButton(SelectedAction::Magnifier);
+        layout->addWidget(btn);
+    }
+    {
+        ToolPushButton* btn = btnColl->GetToolButton(SelectedAction::InvertColor);
+        layout->addWidget(btn);
+    }
+    {
+        ToolPushButton* btn = btnColl->GetToolButton(SelectedAction::OverlayInformation);
+        layout->addWidget(btn);
+    }
 }

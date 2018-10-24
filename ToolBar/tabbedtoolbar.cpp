@@ -3,6 +3,7 @@
 #include "gridtoolbar.h"
 #include "viewingtoolsbar.h"
 #include "favoritetoolbar.h"
+#include "annotationtoolsbar.h"
 
 TabbedToolBar::TabbedToolBar(QWidget* parent)
 {
@@ -12,7 +13,7 @@ TabbedToolBar::TabbedToolBar(QWidget* parent)
     CreateFavTools();
     CreateViewingTools();
 //    CreateWLWWTools();
-//    CreateMeasurementTools();
+    CreateMeasurementTools();
 
 }
 
@@ -29,10 +30,10 @@ void TabbedToolBar::CreateViewingTools(){
 //    this->addTab(toolbar,"My Favorites");
 //}
 
-//void TabbedToolBar::CreateMeasurementTools(){
-//    auto toolbar = new GridToolBar(this->parentWidget());
-//    this->addTab(toolbar,"Measurement Tools");
-//}
+void TabbedToolBar::CreateMeasurementTools(){
+    auto toolbar = new AnnotationToolsBar(this->parentWidget());
+    this->addTab(toolbar,"Measurement Tools");
+}
 
 //void TabbedToolBar::CreateWLWWTools(){
 //    auto toolbar = new GridToolBar(this->parentWidget());

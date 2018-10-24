@@ -34,7 +34,9 @@ SOURCES += \
     ToolBar/gridtoolbar.cpp \
     ToolBar/viewingtoolsbar.cpp \
     ToolBar/favoritetoolbar.cpp \
-    ToolBar/toolbuttonscollection.cpp
+    ToolBar/toolbuttonscollection.cpp \
+    ToolBar/annotationtoolsbar.cpp \
+    ToolBar/testwidget.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -44,7 +46,8 @@ HEADERS += \
     ToolBar/viewingtoolsbar.h \
     ToolBar/favoritetoolbar.h \
     ToolBar/toolbuttonscollection.h \
-    ToolBar/toolactions.h
+    ToolBar/toolactions.h \
+    ToolBar/annotationtoolsbar.h
 
 #FORMS += \
 #        mainwindow.ui

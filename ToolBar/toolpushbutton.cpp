@@ -1,17 +1,22 @@
 #include "toolpushbutton.h"
 #include <QDebug>
 
-ToolPushButton::ToolPushButton(SelectedAction action)
+struct ToolPushButtonData{
+    SelectedAction m_action;
+    QIcon* m_selectedIcon;
+    QIcon* m_icon;
+};
+
+ToolPushButton::ToolPushButton(SelectedAction action, QWidget* parent): QPushButton(parent)
 {
-    this->m_action =action;
-    this->m_icon = nullptr;
-    this->m_selectedIcon = nullptr;
+    d = new ToolPushButtonData();
+    d->m_action =action;
+    d->m_icon = nullptr;
+    d->m_selectedIcon = nullptr;
     this->setStyleSheet("color:white; border-style: solid; border-width:0px; border-color:gray; background-color:black;");
-    //qDebug()<<"Btn stylesheet:"<<this->styleSheet();
     this->setIconSize(QSize(25,25));
-    //this->setFixedSize(32,32);
     this->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-    //this->setContentsMargins(5,5,5,5);
+    connect(this, SIGNAL(clicked()), this, SLOT(ButtonClicked()));
 }
 
 ToolPushButton::ToolPushButton(SelectedAction action, QString text):ToolPushButton(action){
@@ -19,9 +24,16 @@ ToolPushButton::ToolPushButton(SelectedAction action, QString text):ToolPushButt
 }
 
 ToolPushButton::ToolPushButton(SelectedAction action, QIcon* icon, QIcon* selectedIcon,QString toolTipText):ToolPushButton(action){
-    this->m_icon = icon;
-    this->m_selectedIcon=selectedIcon;
-    this->setIcon(*m_icon);
+    d->m_icon = icon;
+    d->m_selectedIcon=selectedIcon;
+    this->setIcon(*d->m_icon);
     this->setToolTip(toolTipText);
 }
 
+ToolPushButton::~ToolPushButton(){
+
+}
+
+void ToolPushButton::ButtonClicked(){
+    qDebug()<< "Button clicked:"<<d->m_action;
+}
